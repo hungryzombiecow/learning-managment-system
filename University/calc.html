@@ -1,0 +1,64 @@
+<html>
+<body>
+
+<script>
+var per=prompt("please enter your previous year percentage");
+var a=1;
+
+function one()
+{
+alert("Congratulations Schlorship:Rs.50,000/-");
+}
+function two()
+{
+alert("Congratulations Schlorship:Rs.40,000/-");
+}
+function three()
+{
+alert("Congratulations Schlorship:Rs.30,000/-");
+}
+function four()
+{
+alert("Sorry,No schlor ship for less then 70%");
+}
+
+
+
+while (a==1)
+{
+if(per>=100 || per=="")
+{
+alert("Enter valid details");
+var per=prompt("please enter your previous year percentage");
+}
+else
+{
+if(per>=90)
+{
+one();
+
+}
+else if(per>=80 && per<90)
+{
+two();
+
+}
+else if(per>=70 && per<80)
+{
+three();
+
+}
+else
+{
+four();
+}
+
+a=2;
+}
+
+
+}
+
+
+</script>
+</html>

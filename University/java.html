@@ -1,0 +1,68 @@
+<html>
+ <head>
+
+  <script>
+
+    window.onload = function() {
+
+        var a = document.getElementById('1');
+        var b = document.getElementById('2');
+        var c = document.getElementById('3');
+
+        a.onclick = one;
+        b.onclick = two;
+        c.onclick = three;
+
+    }
+
+    function one() 
+    {
+        document.getElementById("main").innerHTML="Diploma <br> Agriculture <br>Management<br>Architecture<br>Design<br>Fashion Design<br>";
+    }
+    function two()
+	{
+	document.getElementById("main").innerHTML="Engineering<br>Economics<br>Biotechnology<br>Fine Arts<br>Fashion design<br>Multimedia and Animation";
+}
+    function three()
+{
+       document.getElementById("main").innerHTML="Management<br>Commerce<br>Hotel Management<br>Computer Applications<br>Physiotherapy<br>Physical Education";
+}
+    function v()
+{
+confirm("You will be redirected to another window click cancel to stop");
+}
+
+
+</script>
+
+ </head>
+ <body background=white.jpg>
+<table>
+<tr>
+<td>
+What's your last qualification?
+<br>
+  10th<input type="radio" name="course" id="1" value="1" /><br>
+
+  12th<input type="radio" name="course" id="2" value="2" /><br>
+
+  Diploma or Cerrtificate<input type="radio" name="course" id="3" value="3" />
+  
+	<br><p><u><font color="skyblue" size=5>Courses Related:</p></u>
+	<p id="main" ><font color="skyblue" size=20></p>
+</td>
+<td>
+<fieldset>
+<legend>We will come in contact with you</legend>
+<form name="form" onsubmit="return v()">
+Name:<input type="text" id="n" name="fname" required><br>
+Gender     : <input type="radio" name="gender" value="male" required>Male
+<input type="radio" name="gender" value="female" required>Female<br>
+DOB 	   : <input type="date" name="bday" required><br>
+<input type="submit" value="Submit">
+</fieldset>
+</td>
+<td>
+<a href="calc.html"><img src=s.jpg></a>
+</body>
+</html>
